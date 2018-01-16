@@ -102,6 +102,12 @@ public class LoadingView extends android.support.v7.widget.AppCompatImageView {
         canvas.restore();
     }
 
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        stopAnimator();
+    }
+
     private void drawArc(Canvas canvas) {
         canvas.save();
         if (mLoadingType == TYPE_ROTATE) {
