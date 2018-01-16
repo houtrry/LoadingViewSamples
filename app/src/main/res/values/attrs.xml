@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="LoadingView">
+        <!--外侧圆环的线条的宽度-->
         <attr name="borderWidth" format="dimension"/>
+        <!--外侧圆环的线条的颜色-->
         <attr name="borderColor" format="color"/>
+        <!--动画类型-->
         <attr name="loadingType" >
+            <!--外侧圆环有旋转-->
             <flag name="typeRotate" value="0"/>
+            <!--外侧圆环没有旋转-->
             <flag name="typeMotionless" value="1"/>
         </attr>
+        <!--动画时长-->
         <attr name="animatorDuration" format="integer"/>
     </declare-styleable>
 </resources>
